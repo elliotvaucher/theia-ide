@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/tslint/config */
+/* eslint-disable no-trailing-spaces */
 /********************************************************************************
  * Copyright (C) 2020 EclipseSource and others.
  *
@@ -30,17 +32,16 @@ function BrowserLink(props: ExternalBrowserLinkProps): JSX.Element {
 export function renderWhatIs(windowService: WindowService): React.ReactNode {
     return <div className='gs-section'>
         <h3 className='gs-section-header'>
-            What is this?
+            Qu'est-ce que Privadata ?
         </h3>
         <div>
-            The Eclipse Theia IDE is a modern and open IDE for cloud and desktop. The Theia IDE is based on the <BrowserLink text="Theia platform"
-            url="https://theia-ide.org" windowService={windowService} ></BrowserLink>.
+            Privadata est une solution innovante d'intelligence artificielle conçue spécifiquement pour les professionnels du droit. 
+            Notre plateforme utilise des technologies de pointe pour simplifier et automatiser les tâches juridiques complexes.
         </div>
         <div>
-            The IDE is available as a <BrowserLink text="downloadable desktop application" url="https://theia-ide.org//#theiaidedownload"
-            windowService={windowService} ></BrowserLink>. You can also <BrowserLink text="try the latest version of the Theia IDE online"
-            url="https://try.theia-cloud.io/" windowService={windowService} ></BrowserLink>. The online test version is limited to 30 minutes per session and hosted
-            via <BrowserLink text="Theia Cloud" url="https://theia-cloud.io/" windowService={windowService} ></BrowserLink>.
+            Disponible en tant que <BrowserLink text="solution cloud sécurisée" url="https://privadata.fr/cloud" 
+            windowService={windowService} ></BrowserLink>, Privadata peut également être déployée sur site pour répondre aux exigences 
+            de confidentialité les plus strictes.
         </div>
     </div>;
 }
@@ -48,17 +49,17 @@ export function renderWhatIs(windowService: WindowService): React.ReactNode {
 export function renderExtendingCustomizing(windowService: WindowService): React.ReactNode {
     return <div className='gs-section'>
         <h3 className='gs-section-header'>
-            Extending/Customizing the Theia IDE
+            Fonctionnalités Principales
         </h3>
-        <div >
-            You can extend the Theia IDE at runtime by installing VS Code extensions, e.g. from the <BrowserLink text="OpenVSX registry" url="https://open-vsx.org/"
-            windowService={windowService} ></BrowserLink>, an open marketplace for VS Code extensions. Just open the extension view or browse <BrowserLink
-            text="OpenVSX online" url="https://open-vsx.org/" windowService={windowService} ></BrowserLink>.
+        <div>
+            Privadata propose une suite complète d'outils d'IA, notamment l'analyse automatique de documents juridiques, 
+            la génération de résumés, et l'extraction intelligente de données clés. Découvrez notre <BrowserLink 
+            text="catalogue de fonctionnalités" url="https://privadata.fr/fonctionnalites" 
+            windowService={windowService} ></BrowserLink>.
         </div>
         <div>
-            Furthermore, the Theia IDE is based on the flexible Theia platform. Therefore, the Theia IDE can serve as a <span className='gs-text-bold'>template</span> for building
-            custom tools and IDEs. Browse <BrowserLink text="the documentation" url="https://theia-ide.org/docs/composing_applications/"
-            windowService={windowService} ></BrowserLink> to help you customize and build your own Eclipse Theia-based product.
+            Notre plateforme s'adapte à vos besoins spécifiques et peut être personnalisée pour différents domaines du droit : 
+            contentieux, contrats, propriété intellectuelle, et plus encore.
         </div>
     </div>;
 }
@@ -66,12 +67,12 @@ export function renderExtendingCustomizing(windowService: WindowService): React.
 export function renderSupport(windowService: WindowService): React.ReactNode {
     return <div className='gs-section'>
         <h3 className='gs-section-header'>
-            Professional Support
+            Support Professionnel
         </h3>
         <div>
-            Professional support, implementation services, consulting and training for building tools like Theia IDE and for building other tools based on Eclipse Theia is
-            available by selected companies as listed on the <BrowserLink text=" Theia support page" url="https://theia-ide.org/support/"
-            windowService={windowService} ></BrowserLink>.
+            Notre équipe d'experts est disponible 24/7 pour vous accompagner. Consultez notre <BrowserLink 
+            text="centre d'assistance" url="https://support.privadata.fr" 
+            windowService={windowService} ></BrowserLink> ou contactez directement notre service client.
         </div>
     </div>;
 }
@@ -79,20 +80,12 @@ export function renderSupport(windowService: WindowService): React.ReactNode {
 export function renderTickets(windowService: WindowService): React.ReactNode {
     return <div className='gs-section'>
         <h3 className='gs-section-header'>
-            Reporting feature requests and bugs
+            Signalement et Suggestions
         </h3>
-        <div >
-            The features in the Eclipse Theia IDE are based on Theia and the included
-            extensions/plugins. For bugs in Theia please consider opening an issue in
-            the <BrowserLink text="Theia project on Github" url="https://github.com/eclipse-theia/theia/issues/new/choose"
-                windowService={windowService} ></BrowserLink>.
-        </div>
         <div>
-            Eclipse Theia IDE only packages existing functionality into a product and installers
-            for the product. If you believe there is a mistake in packaging, something needs to be added to the
-            packaging or the installers do not work properly,
-            please <BrowserLink text="open an issue on Github" url="https://github.com/eclipse-theia/theia-ide/issues/new/choose"
-                windowService={windowService} ></BrowserLink> to let us know.
+            Votre retour est essentiel pour l'amélioration continue de Privadata. Pour signaler un problème ou 
+            suggérer une amélioration, utilisez notre <BrowserLink text="portail de feedback" 
+            url="https://privadata.fr/feedback" windowService={windowService} ></BrowserLink>.
         </div>
     </div>;
 }
@@ -100,12 +93,12 @@ export function renderTickets(windowService: WindowService): React.ReactNode {
 export function renderSourceCode(windowService: WindowService): React.ReactNode {
     return <div className='gs-section'>
         <h3 className='gs-section-header'>
-            Source Code
+            Sécurité et Conformité
         </h3>
-        <div >
-            The source code of Eclipse Theia IDE is available
-            on <BrowserLink text="Github" url="https://github.com/eclipse-theia/theia-ide"
-                windowService={windowService} ></BrowserLink>.
+        <div>
+            Privadata respecte les plus hauts standards de sécurité et de protection des données. En savoir plus sur 
+            nos <BrowserLink text="certifications et conformités" url="https://privadata.fr/securite" 
+            windowService={windowService} ></BrowserLink>.
         </div>
     </div>;
 }
@@ -115,9 +108,9 @@ export function renderDocumentation(windowService: WindowService): React.ReactNo
         <h3 className='gs-section-header'>
             Documentation
         </h3>
-        <div >
-            Please see the <BrowserLink text="documentation" url="https://theia-ide.org/docs/user_getting_started/"
-            windowService={windowService} ></BrowserLink> on how to use the Theia IDE.
+        <div>
+            Consultez notre <BrowserLink text="centre de documentation" url="https://docs.privadata.fr" 
+            windowService={windowService} ></BrowserLink> pour des guides détaillés et des tutoriels.
         </div>
     </div>;
 }
@@ -127,12 +120,11 @@ export function renderCollaboration(windowService: WindowService): React.ReactNo
         <h3 className='gs-section-header'>
             Collaboration
         </h3>
-        <div >
-            The IDE features a built-in collaboration feature.
-            You can share your workspace with others and work together in real-time by clicking on the <i>Collaborate</i> item in the status bar.
-            The collaboration feature is powered by
-            the <BrowserLink text="Open Collaboration Tools" url="https://www.open-collab.tools/" windowService={windowService} /> project
-            and uses their public server infrastructure.
+        <div>
+            Travaillez efficacement en équipe grâce à nos fonctionnalités de collaboration en temps réel. 
+            Partagez des documents, commentez et collaborez directement dans l'interface. Découvrez 
+            nos <BrowserLink text="outils collaboratifs" url="https://privadata.fr/collaboration" 
+            windowService={windowService} />.
         </div>
     </div>;
 }
@@ -140,15 +132,12 @@ export function renderCollaboration(windowService: WindowService): React.ReactNo
 export function renderDownloads(): React.ReactNode {
     return <div className='gs-section'>
         <h3 className='gs-section-header'>
-            Updates and Downloads
+            Mises à Jour
         </h3>
         <div className='gs-action-container'>
-            You can update Eclipse Theia IDE directly in this application by navigating to
-            File {'>'} Preferences {'>'} Check for Updates… Moreover the application will check for updates
-            after each launch automatically.
-        </div>
-        <div className='gs-action-container'>
-            Alternatively you can download the most recent version from the download page.
+            Privadata se met à jour automatiquement pour vous garantir l'accès aux dernières fonctionnalités 
+            et améliorations de sécurité. Vous pouvez vérifier les mises à jour dans 
+            Fichier {'>'} Préférences {'>'} Rechercher des mises à jour.
         </div>
     </div>;
 }
